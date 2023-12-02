@@ -1,0 +1,13 @@
+
+The two-sided t-test is carried out by
+x<-rnorm(100); mytest<-t.test(x)
+or simply by
+mytest<-t.test(rnorm(100))
+The variable “mytest” contains the results, which can be displayed by
+mytest
+The structure of the variable “mytest” can be displayed by
+str(mytest)
+and contains all information about the test. For example, the p-value, the observed value of the test-statistic, and a 95% confidence interval for the population mean μ can be extracted by:
+mytest$p.value; mytest$statistic; mytest$conf.int
+A. Simulate k = 104 random samples of size n = 10 from the standard-normal distribution, apply t-tests to all of them, extract the p-values, and plot them in the form of a histogram.
+
